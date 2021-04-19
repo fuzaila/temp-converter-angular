@@ -17,7 +17,7 @@ export class TemperatureConverter implements OnInit {
     // this.C = this.C  × 5 / 9;
     // this.F = this.C*9/5 + 32;
 
-      this.C = (this.F - 32) * 5 / 9;
+      // this.C = (this.F - 32) * 5 / 9;
       this.F = this.C * (9 / 5) + 32;
 
 
