@@ -2,11 +2,11 @@
 
   <section class="layout-row align-items-center justify-content-between">
     <label>Celsius: </label>
-    <input type="number" class="large" data-test-id="celsius-input" [(ngModel)]="C"/>
+    <input type="number" class="large" data-test-id="celsius-input" [(ngModel)]="C" (input)="convertC()" />
   </section>
 
   <section class="layout-row align-items-center justify-content-between">
       <label>Fahrenheit: </label>
-      <input type="number" class="large" data-test-id="fahrenheit-input" [(ngModel)]="F"/>
+      <input type="number" class="large" data-test-id="fahrenheit-input" [(ngModel)]="F" (input)="convertF()" />
   </section>
 </div>

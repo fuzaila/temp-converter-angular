@@ -8,21 +8,12 @@ import {Component, Input, OnInit} from '@angular/core';
 
 export class TemperatureConverter implements OnInit {
 
-  C = 0;
-  F = 0;
+  C = 0; F = 0;
 
-  ngOnInit() {
+  ngOnInit() {}
 
-    // this.C = this.F − 32;
-    // this.C = this.C  × 5 / 9;
-    // this.F = this.C*9/5 + 32;
+  convertC()  {   this.F = this.C * 9 / 5 + 32;  }
 
-      console.log("Celsius : " + this.C);
-      console.log("Fahr : " + this.F);
-      this.C = this.F - 32 * 5 / 9;
-      this.F = this.C * 9 / 5 + 32;
-
-
-  }
+  convertF()  {   this.C = (this.F - 32) * 5 / 9;  }
 
 }
